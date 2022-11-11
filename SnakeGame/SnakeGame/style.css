@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ede0d4;
+}
+#resp {
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid green; */
+  height: 100%;
+}
+
+h1 {
+  margin: 0px auto;
+  display: block;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 2px 3px 2px rgba(203, 82, 82, 0.308);
+}
+canvas {
+  border: 20px solid lightgreen;
+  background-color: black;
+  margin-left: 11px;
+}
+
+button {
+  margin: 0px auto;
+  display: block;
+  width: 150px;
+  height: 60px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #264653;
+  color: white;
+  margin-top: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.snake {
+  height: 80vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* border: 2px solid black; */
+  /* flex-wrap: wrap; */
+}
+
+@media only screen and (max-width: 1350px) {
+  h1 {
+    font-size: 20px;
+  }
+  button {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+  }
+  #canvas {
+    border: 10px solid lightgreen;
+    /* height: 590px;
+    margin-top: 0px; */
+  }
+
+  body {
+    margin-top: 2px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  body {
+    margin-top: 10px;
+  }
+}
